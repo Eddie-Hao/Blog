@@ -166,6 +166,7 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
     type: disqus
+    enable: true
     # Disqus shortname
     shortname: https-eddie-hao-github-io-blog-1
 
