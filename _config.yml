@@ -5,8 +5,8 @@ keywords: null
 author: John Doe
 language: zh-TW
 timezone: ''
-url: https://eddie-hao.github.io/note/ 
-root: /note/
+url: https://eddie-hao.github.io/
+# root: /note/
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
@@ -63,5 +63,5 @@ ignore: null
 theme: icarus
 deploy:
   type: git
-  repo: git@github.com:Eddie-Hao/note.git
+  repo: git@github.com:Eddie-Hao/Eddie-Hao.github.io.git
   branch: gh-pages 
