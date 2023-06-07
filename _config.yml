@@ -5,7 +5,7 @@ keywords: null
 author: John Doe
 language: en
 timezone: ''
-url: https://github.com/Eddie-Hao/note.git 
+url: https://eddie-hao.github.io/note 
 root: /note/
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
