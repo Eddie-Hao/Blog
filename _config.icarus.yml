@@ -167,7 +167,7 @@ search:
 comment:
     type: disqus
     # Disqus shortname
-    shortname: 'https-eddie-hao-github-io-blog'
+    shortname: https-eddie-hao-github-io-blog
 
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
