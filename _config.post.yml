@@ -165,9 +165,9 @@ search:
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: disqus
+    type: facebook
     # Disqus shortname
-    shortname: 'Eddie-hao_blog'
+
 
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
