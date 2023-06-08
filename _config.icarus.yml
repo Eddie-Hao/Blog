@@ -300,7 +300,7 @@ plugins:
     # https://analytics.google.com
     google_analytics:
         # Google Analytics tracking ID
-        tracking_id: 5383656975
+        tracking_id: G-LF5BNKHQTZ
     # Hotjar user feedback plugin -熱點工具
     # https://www.hotjar.com/
     hotjar:
