@@ -7,7 +7,7 @@ logo: /img/logo.png
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/favicon.svg
+    favicon: /img/favicon.ico
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -15,14 +15,14 @@ head:
         name: Eddie學習筆記
         # The displayed name of the web application
         # when there is not enough space to display full name
-        short_name: 
+        short_name: Eddie筆記
         # The start URL of the web application
-        start_url: 
+        start_url: http://localhost:4000/blog/
         # The default theme color for the application
-        theme_color: 
+        # theme_color: 
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
-        background_color: 
+        background_color: '#fff'
         # The preferred display mode for the website
         display: standalone
         # Image files that can serve as application icons for different contexts
@@ -45,7 +45,7 @@ head:
         type: blog
         # Page URL (og:url) (optional)
         # You should leave this blank for most of the time
-        url: 
+        url: https://eddie-hao.github.io/blog/
         # Page cover (og:image) (optional)
         # You should leave this blank for most of the time
         image: 
@@ -54,22 +54,22 @@ head:
         site_name: Eddie學習筆記
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: 
+        author: Eddie
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
-        description: 
+        description: Eddie學習筆記,設計、前端
         # Twitter card type (twitter:card)
-        twitter_card: 
+        # twitter_card: 
         # Twitter ID (twitter:creator)
-        twitter_id: 
+        # twitter_id: 
         # Twitter Site (twitter:site)
-        twitter_site: 
+        # twitter_site: 
         # Google+ profile link (deprecated)
-        google_plus: 
+        # google_plus: 
         # Facebook admin ID
-        fb_admins: 
+        # fb_admins: 
         # Facebook App ID
-        fb_app_id: 
+        # fb_app_id: 
     # Structured data of the page
     # https://developers.google.com/search/docs/guides/intro-structured-data
     structured_data:
@@ -78,22 +78,22 @@ head:
         title: Eddie學習筆記
         # Page description (optional)
         # You should leave this blank for most of the time
-        description: 
+        description: Eddie學習筆記,設計、前端
         # Page URL (optional)
         # You should leave this blank for most of the time
-        url: 
+        url: https://eddie-hao.github.io/blog/
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: 
+        author: Eddie
         # Page publisher (optional)
         # You should leave this blank for most of the time
-        publisher: 
+        publisher: Eddie
         # Page publisher logo (optional)
         # You should leave this blank for most of the time
-        publisher_logo: 
+        # publisher_logo: 
         # Page images (optional)
         # You should leave this blank for most of the time
-        image: 
+        # image: 
     # Additional HTML meta tags in an array
     meta:
         # Meta tag specified in <attribute>=<value> style
@@ -166,8 +166,6 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
     type: facebook
-    # Disqus shortname
-    # shortname: https-eddie-hao-github-io-blog-1
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -205,14 +203,14 @@ widgets:
         social_links:
             Github:
                 icon: fab fa-github
-                url: https://github.com/ppoffice
+                url: https://github.com/Eddie-Hao
             Behance:
                 icon: fa-brands fa-behance 
-                url: https://dribbble.com
+                url: https://www.behance.net/hungjihao
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: right
+        position: left
         type: toc
         # Whether to show the index of each heading
         index: true
@@ -222,13 +220,13 @@ widgets:
         depth: 3
     # Recommendation links widget configurations
     -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: links
+        # Where should the widget be placed, left sidebar or right sidebar -好友連結
+        # position: left
+        # type: links
         # Names and URLs of the sites
-        links:
-            Hexo: https://hexo.io
-            Bulma: https://bulma.io
+        # links:
+        #     Hexo: https://hexo.io
+        #     Bulma: https://bulma.io
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -302,8 +300,8 @@ plugins:
     # https://analytics.google.com
     google_analytics:
         # Google Analytics tracking ID
-        tracking_id: 
-    # Hotjar user feedback plugin
+        tracking_id: 5383656975
+    # Hotjar user feedback plugin -熱點工具
     # https://www.hotjar.com/
     hotjar:
         # Hotjar site id
