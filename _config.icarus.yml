@@ -220,10 +220,10 @@ widgets:
         depth: 3
     # Recommendation links widget configurations
     -
-        # Where should the widget be placed, left sidebar or right sidebar -好友連結
+        # # Where should the widget be placed, left sidebar or right sidebar -好友連結
         # position: left
         # type: links
-        # Names and URLs of the sites
+        # # Names and URLs of the sites
         # links:
         #     Hexo: https://hexo.io
         #     Bulma: https://bulma.io
