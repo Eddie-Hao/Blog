@@ -218,15 +218,15 @@ widgets:
         collapsed: true
         # Maximum level of headings to show (1-6)
         depth: 3
-    # Recommendation links widget configurations
-    -
-        # # Where should the widget be placed, left sidebar or right sidebar -好友連結
-        # position: left
-        # type: links
-        # # Names and URLs of the sites
-        # links:
-        #     Hexo: https://hexo.io
-        #     Bulma: https://bulma.io
+    # # Recommendation links widget configurations
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar -好友連結
+    #     position: left
+    #     type: links
+    #     # Names and URLs of the sites
+    #     links:
+    #         Hexo: https://hexo.io
+    #         Bulma: https://bulma.io
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
