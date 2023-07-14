@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Flexbox 介紹 - 學習筆記</title><link rel="manifest" href="/blog/manifest.json"><meta name="application-name" content="Eddie學習筆記"><meta name="msapplication-TileImage" content="/img/favicon.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Eddie學習筆記"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Eddie學習筆記,設計、前端"><meta property="og:type" content="blog"><meta property="og:title" content="Eddie學習筆記"><meta property="og:url" content="https://eddie-hao.github.io/blog/"><meta property="og:site_name" content="Eddie學習筆記"><meta property="og:description" content="Eddie學習筆記,設計、前端"><meta property="og:locale" content="zh_TW"><meta property="og:image" content="https://lurl.cc/AGURMm"><meta property="article:published_time" content="2023-07-14T09:18:39.601Z"><meta property="article:modified_time" content="2023-07-14T10:58:45.275Z"><meta property="article:author" content="Eddie"><meta property="article:tag" content="前端"><meta property="article:tag" content="css"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://lurl.cc/AGURMm"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://eddie-hao.github.io/blog/"},"headline":"Eddie學習筆記","image":[],"datePublished":"2023-07-14T09:18:39.601Z","dateModified":"2023-07-14T10:58:45.275Z","author":{"@type":"Person","name":"Eddie"},"publisher":{"@type":"Organization","name":"Eddie","logo":{"@type":"ImageObject","url":"https://eddie-hao.github.io/img/logo.png"}},"description":"Eddie學習筆記,設計、前端"}</script><link rel="canonical" href="https://eddie-hao.github.io/blog/2023/07/14/2023/7-14-Flexbox%E4%BB%8B%E7%B4%B9/"><link rel="icon" href="/blog/img/favicon.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/blog/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Flexbox 介紹 - 學習筆記</title><link rel="manifest" href="/blog/manifest.json"><meta name="application-name" content="Eddie學習筆記"><meta name="msapplication-TileImage" content="/img/favicon.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Eddie學習筆記"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Eddie學習筆記,設計、前端"><meta property="og:type" content="blog"><meta property="og:title" content="Eddie學習筆記"><meta property="og:url" content="https://eddie-hao.github.io/blog/"><meta property="og:site_name" content="Eddie學習筆記"><meta property="og:description" content="Eddie學習筆記,設計、前端"><meta property="og:locale" content="zh_TW"><meta property="og:image" content="https://lurl.cc/AGURMm"><meta property="article:published_time" content="2023-07-14T09:18:39.601Z"><meta property="article:modified_time" content="2023-07-14T16:15:03.869Z"><meta property="article:author" content="Eddie"><meta property="article:tag" content="前端"><meta property="article:tag" content="css"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://lurl.cc/AGURMm"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://eddie-hao.github.io/blog/"},"headline":"Eddie學習筆記","image":[],"datePublished":"2023-07-14T09:18:39.601Z","dateModified":"2023-07-14T16:15:03.869Z","author":{"@type":"Person","name":"Eddie"},"publisher":{"@type":"Organization","name":"Eddie","logo":{"@type":"ImageObject","url":"https://eddie-hao.github.io/img/logo.png"}},"description":"Eddie學習筆記,設計、前端"}</script><link rel="canonical" href="https://eddie-hao.github.io/blog/2023/07/14/2023/7-14-Flexbox%E4%BB%8B%E7%B4%B9/"><link rel="icon" href="/blog/img/favicon.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/blog/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
   (function () {
       function switchTab() {
           if (!location.hash) {
@@ -29,13 +29,13 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog/"><img src="/blog/img/logo.png" alt="學習筆記" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog/">首頁</a><a class="navbar-item" href="/blog/categories">分類</a><a class="navbar-item" href="/blog/tags">標籤</a><a class="navbar-item" href="/blog/about">關於</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="文章目錄" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜尋" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2023-07-14T09:18:39.601Z" title="2023/7/14 下午5:18:39">2023-07-14</time>發表</span><span class="level-item"><time dateTime="2023-07-14T10:58:45.275Z" title="2023/7/14 下午6:58:45">2023-07-14</time>更新</span><span class="level-item"><a class="link-muted" href="/blog/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="level-item">7 分鐘讀完 (大約1038個字)</span></div></div><h1 class="title is-3 is-size-4-mobile">Flexbox 介紹</h1><div class="content"><p><img src="https://lurl.cc/AGURMm" alt="flexbox"></p>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blog/"><img src="/blog/img/logo.png" alt="學習筆記" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blog/">首頁</a><a class="navbar-item" href="/blog/categories">分類</a><a class="navbar-item" href="/blog/tags">標籤</a><a class="navbar-item" href="/blog/about">關於</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="文章目錄" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜尋" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2023-07-14T09:18:39.601Z" title="2023/7/14 下午5:18:39">2023-07-14</time>發表</span><span class="level-item"><time dateTime="2023-07-14T16:15:03.869Z" title="2023/7/15 上午12:15:03">2023-07-15</time>更新</span><span class="level-item"><a class="link-muted" href="/blog/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="level-item">7 分鐘讀完 (大約1086個字)</span></div></div><h1 class="title is-3 is-size-4-mobile">Flexbox 介紹</h1><div class="content"><p><img src="https://lurl.cc/AGURMm" alt="flexbox"></p>
 <h1 id="排版神器-Flexbox"><a href="#排版神器-Flexbox" class="headerlink" title="排版神器 - Flexbox"></a>排版神器 - Flexbox</h1><p>在課程學到了被稱為「排版神器」的flex，有別於 float 的置左&#x2F;中&#x2F;右，flex在排版上的則更加方便，不論時水平還是垂直的對齊，使用上都更加彈性。</p>
 <span id="more"></span>
 
 <p>準備:<br><strong>父層 - 外容器  &#x2F; 子層 - 項目</strong></p>
 <h2 id="1-flex"><a href="#1-flex" class="headerlink" title="1. flex"></a>1. flex</h2><p>語法: <code>display: flex;</code><br>放置: 外容器<br>特性:</p>
-<h3 id="1-內層元素會並排-只影響下一層-子層"><a href="#1-內層元素會並排-只影響下一層-子層" class="headerlink" title="(1) 內層元素會並排(只影響下一層-子層)"></a>(1) 內層元素會並排(只影響下一層-子層)</h3><p><img src="https://lurl.cc/hkwj6Q"></p>
+<h3 id="1-內層元素會並排-只影響下一層-子層"><a href="#1-內層元素會並排-只影響下一層-子層" class="headerlink" title="(1) 內層元素會並排(只影響下一層-子層)"></a>(1) 內層元素會並排(只影響下一層-子層)</h3><p><img src="https://lurl.cc/pgm7UW"></p>
 <h3 id="2-內層-item-高度都是等高，除非其他-item-寫死高度才不會等高"><a href="#2-內層-item-高度都是等高，除非其他-item-寫死高度才不會等高" class="headerlink" title="(2) 內層 item 高度都是等高，除非其他 item 寫死高度才不會等高"></a>(2) 內層 item 高度都是等高，除非其他 item 寫死高度才不會等高</h3><table>
 <thead>
 <tr>
@@ -44,19 +44,19 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/NETa96"></td>
-<td><img src="https://lurl.cc/VqCAVN"></td>
+<td><img src="https://lurl.cc/zoU57T"></td>
+<td><img src="https://lurl.cc/ZCuJJ5"></td>
 </tr>
 </tbody></table>
 <h3 id="3-自適應父層容器"><a href="#3-自適應父層容器" class="headerlink" title="(3) 自適應父層容器"></a>(3) 自適應父層容器</h3><h4 id="–指定-item-寬度時，內層總寬度-gt-container寬度-，做等比例伸縮"><a href="#–指定-item-寬度時，內層總寬度-gt-container寬度-，做等比例伸縮" class="headerlink" title="–指定 item 寬度時，內層總寬度 &gt; container寬度 ，做等比例伸縮"></a>–指定 item 寬度時，內層總寬度 &gt; container寬度 ，做等比例伸縮</h4><p>範例1: </p>
 <p>寬度- 父容器:400px 子項目: 150px</p>
-<p><img src="https://lurl.cc/z7LOz7"></p>
+<p><img src="https://lurl.cc/TEgVct"></p>
 <p>增加 item，每個 item 等比分配</p>
-<p><img src="https://lurl.cc/fU2oIK"></p>
+<p><img src="https://lurl.cc/JDnCCY"></p>
 <hr>
 <p>範例2: </p>
-<p>寬度- 父容器:400px &#x2F; 子項目1: 100px &#x2F; 子項目2: 內容撐出寬度 &#x2F; 子項目3- 250px</p>
-<p><img src="https://lurl.cc/hJCwxT"></p>
+<p>寬度- 父容器:400px &#x2F; 子項目1: 100px &#x2F; 子項目2: 內容撐出寬度 &#x2F; 子項目3: 250px</p>
+<p><img src="https://lurl.cc/ymK83x"></p>
 <p>item1 和 item3 實際寬度，不會是設定的寬度，而是依照比例做分配</p>
 <hr>
 <h4 id="–未指定-item寬度時，內層總寬度-gt-container寬度，請-搭配flex-wrap-wrap-做換行，否則會破版"><a href="#–未指定-item寬度時，內層總寬度-gt-container寬度，請-搭配flex-wrap-wrap-做換行，否則會破版" class="headerlink" title="–未指定 item寬度時，內層總寬度 &gt; container寬度，請**搭配flex-wrap: wrap; 做換行，否則會破版"></a>–未指定 item寬度時，內層總寬度 &gt; container寬度，請**搭配flex-wrap: wrap; 做換行，否則會破版</h4><p>範例: </p>
@@ -69,8 +69,21 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/cwAQ3U"></td>
-<td><img src="https://lurl.cc/QpvYix"></td>
+<td><img src="https://lurl.cc/VDAfLj"></td>
+<td><img src="https://lurl.cc/LvjbWH"></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="4-flex-裡面可以再包-flex"><a href="#4-flex-裡面可以再包-flex" class="headerlink" title="(4) flex 裡面可以再包 flex"></a>(4) flex 裡面可以再包 flex</h3><h4 id="–-flex只會影響下一層元素，如果外容器裡面第三層也要併排的話，就要在第二層item加入flex"><a href="#–-flex只會影響下一層元素，如果外容器裡面第三層也要併排的話，就要在第二層item加入flex" class="headerlink" title="– flex只會影響下一層元素，如果外容器裡面第三層也要併排的話，就要在第二層item加入flex"></a>– flex只會影響下一層元素，如果外容器裡面第三層也要併排的話，就要在第二層item加入flex</h4><table>
+<thead>
+<tr>
+<th>外容器 flex</th>
+<th>右側item 下 flex</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://lurl.cc/00YA9b"></td>
+<td><img src="https://lurl.cc/zMJckl"></td>
 </tr>
 </tbody></table>
 <hr>
@@ -85,9 +98,9 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/z0fdEQ"></td>
-<td><img src="https://lurl.cc/2ISh7B"></td>
-<td><img src="https://lurl.cc/zua0AP"></td>
+<td><img src="https://lurl.cc/YM24iJ"></td>
+<td><img src="https://lurl.cc/VfKnWf"></td>
+<td><img src="https://lurl.cc/hSOfQR"></td>
 </tr>
 </tbody></table>
 <h3 id="2-column"><a href="#2-column" class="headerlink" title="(2) column"></a>(2) column</h3><p>img - 主軸column</p>
@@ -100,9 +113,9 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/fTFqZV"></td>
-<td><img src="https://lurl.cc/4q2UKl"></td>
-<td><img src="https://lurl.cc/t5VGRS"></td>
+<td><img src="https://lurl.cc/zqUD7B"></td>
+<td><img src="https://lurl.cc/oMaUFE"></td>
+<td><img src="https://lurl.cc/mkxMHV"></td>
 </tr>
 </tbody></table>
 <hr>
@@ -117,9 +130,9 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/bpraIW"></td>
-<td><img src="https://lurl.cc/wst4UQ"></td>
-<td><img src="https://lurl.cc/faVB4T"></td>
+<td><img src="https://lurl.cc/DYJils"></td>
+<td><img src="https://lurl.cc/xJmcqh"></td>
+<td><img src="https://lurl.cc/kwngHh"></td>
 </tr>
 </tbody></table>
 <table>
@@ -131,9 +144,9 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/EmilC2"></td>
-<td><img src="https://lurl.cc/kArO3b"></td>
-<td><img src="https://lurl.cc/umAwh4"></td>
+<td><img src="https://lurl.cc/CR0g5k"></td>
+<td><img src="https://lurl.cc/Ttp4YR"></td>
+<td><img src="https://lurl.cc/7gF0LJ"></td>
 </tr>
 </tbody></table>
 <h3 id="2-column-1"><a href="#2-column-1" class="headerlink" title="(2) column"></a>(2) column</h3><table>
@@ -145,9 +158,9 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/4O7qev"></td>
-<td><img src="https://lurl.cc/IqfN6I"></td>
-<td><img src="https://lurl.cc/h9lF6e"></td>
+<td><img src="https://lurl.cc/BfXAMf"></td>
+<td><img src="https://lurl.cc/lnJ4r2"></td>
+<td><img src="https://lurl.cc/VpjkA6"></td>
 </tr>
 </tbody></table>
 <table>
@@ -159,14 +172,14 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/vJGLmY"></td>
-<td><img src="https://lurl.cc/LOcUh7"></td>
-<td><img src="https://lurl.cc/b4kzCL"></td>
+<td><img src="https://lurl.cc/LghdFF"></td>
+<td><img src="https://lurl.cc/v8SPNg"></td>
+<td><img src="https://lurl.cc/6apCBo"></td>
 </tr>
 </tbody></table>
 <hr>
 <h2 id="4-align-items"><a href="#4-align-items" class="headerlink" title="4. align-items"></a>4. align-items</h2><p>語法: <code>align-items: flex-start / flex-end / center / baseline / stretch;</code><br>放置: 外容器<br>特性: 決定交錯軸對齊方式</p>
-<p><img src="https://lurl.cc/WLV9vK"></p>
+<p><img src="https://lurl.cc/7eOy8i"></p>
 <h3 id="1-row-2"><a href="#1-row-2" class="headerlink" title="(1) row"></a>(1) row</h3><table>
 <thead>
 <tr>
@@ -176,25 +189,25 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/CJJQ8D"></td>
-<td><img src="https://lurl.cc/aMcv3O"></td>
-<td><img src="https://lurl.cc/EMk5cn"></td>
+<td><img src="https://lurl.cc/jIAkdH"></td>
+<td><img src="https://lurl.cc/Ew4R4C"></td>
+<td><img src="https://lurl.cc/5MjcUB"></td>
 </tr>
 </tbody></table>
 <table>
 <thead>
 <tr>
-<th>space-between</th>
-<th>space-around</th>
+<th align="center">space-between</th>
+<th align="center">space-around</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/8thlMl"></td>
-<td><img src="https://lurl.cc/sl9m5h"></td>
+<td align="center"><img src="https://lurl.cc/Jn2pVl"></td>
+<td align="center"><img src="https://lurl.cc/g4Y0aL"></td>
 </tr>
 <tr>
-<td>對齊文字基準線</td>
-<td>交錯軸滿版 (高度為auto,不要寫死高度)</td>
+<td align="center">對齊文字基準線</td>
+<td align="center">交錯軸滿版 (高度為auto,不要寫死高度)</td>
 </tr>
 </tbody></table>
 <h3 id="2-column-2"><a href="#2-column-2" class="headerlink" title="(2) column"></a>(2) column</h3><table>
@@ -206,9 +219,9 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/1nXaR6"></td>
-<td><img src="https://lurl.cc/LLOjHa"></td>
-<td><img src="https://lurl.cc/mEE0iS"></td>
+<td><img src="https://lurl.cc/vLLalz"></td>
+<td><img src="https://lurl.cc/0yGH2M"></td>
+<td><img src="https://lurl.cc/kiIrDU"></td>
 </tr>
 </tbody></table>
 <table>
@@ -219,8 +232,8 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/KQbGwv"></td>
-<td><img src="https://lurl.cc/ZcT9pY"></td>
+<td><img src="https://lurl.cc/7evgCi"></td>
+<td><img src="https://lurl.cc/s4C8Js"></td>
 </tr>
 <tr>
 <td>對齊文字基準線</td>
@@ -239,10 +252,10 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/EniN0R"></td>
-<td><img src="https://lurl.cc/n3aoYZ"></td>
-<td><img src="https://lurl.cc/DJHMYE"></td>
-<td><img src="https://lurl.cc/W4YugX"></td>
+<td><img src="https://lurl.cc/tVPiG2"></td>
+<td><img src="https://lurl.cc/ztgXgT"></td>
+<td><img src="https://lurl.cc/onXRkc"></td>
+<td><img src="https://lurl.cc/eOUHr3"></td>
 </tr>
 </tbody></table>
 <h3 id="2-column-3"><a href="#2-column-3" class="headerlink" title="(2) column"></a>(2) column</h3><table>
@@ -255,17 +268,17 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/a4juwg"></td>
-<td><img src="https://lurl.cc/JgSjub"></td>
-<td><img src="https://lurl.cc/SZE95e"></td>
-<td><img src="https://lurl.cc/gta84G"></td>
+<td><img src="https://lurl.cc/bVPwCV"></td>
+<td><img src="https://lurl.cc/uktQG3"></td>
+<td><img src="https://lurl.cc/yqmjAm"></td>
+<td><img src="https://lurl.cc/PGmUkV"></td>
 </tr>
 </tbody></table>
 <hr>
 <h2 id="6-flex-wrap"><a href="#6-flex-wrap" class="headerlink" title="6. flex-wrap"></a>6. flex-wrap</h2><p>語法: <code>flex-wrap: nowrap / wrap / wrap-reverse;</code><br>放置: 外容器<br>特性: 子項目超出父容器的寬度時，是否換行 </p>
-<h3 id="1-nowrap-未寫死寬度情況下，所有item會等比例並排"><a href="#1-nowrap-未寫死寬度情況下，所有item會等比例並排" class="headerlink" title="(1)nowrap - 未寫死寬度情況下，所有item會等比例並排"></a>(1)nowrap - 未寫死寬度情況下，所有item會等比例並排</h3><p><img src="https://lurl.cc/C5P93m"></p>
-<h3 id="2-wrap-所有item超出容器寬度時，換行"><a href="#2-wrap-所有item超出容器寬度時，換行" class="headerlink" title="(2)wrap - 所有item超出容器寬度時，換行"></a>(2)wrap - 所有item超出容器寬度時，換行</h3><p><img src="https://lurl.cc/JD2qYX"></p>
-<h3 id="3-wrap-reverse-換行順序相反"><a href="#3-wrap-reverse-換行順序相反" class="headerlink" title="(3)wrap-reverse - 換行順序相反"></a>(3)wrap-reverse - 換行順序相反</h3><p><img src="https://lurl.cc/bE2VPj"></p>
+<h3 id="1-nowrap-未寫死寬度情況下，所有item會等比例並排"><a href="#1-nowrap-未寫死寬度情況下，所有item會等比例並排" class="headerlink" title="(1)nowrap - 未寫死寬度情況下，所有item會等比例並排"></a>(1)nowrap - 未寫死寬度情況下，所有item會等比例並排</h3><p><img src="https://lurl.cc/Dk8QEi"></p>
+<h3 id="2-wrap-所有item超出容器寬度時，換行"><a href="#2-wrap-所有item超出容器寬度時，換行" class="headerlink" title="(2)wrap - 所有item超出容器寬度時，換行"></a>(2)wrap - 所有item超出容器寬度時，換行</h3><p><img src="https://lurl.cc/EqZYkm"></p>
+<h3 id="3-wrap-reverse-換行順序相反"><a href="#3-wrap-reverse-換行順序相反" class="headerlink" title="(3)wrap-reverse - 換行順序相反"></a>(3)wrap-reverse - 換行順序相反</h3><p><img src="https://lurl.cc/PdbTaZ"></p>
 <hr>
 <h2 id="7-align-content"><a href="#7-align-content" class="headerlink" title="7. align-content"></a>7. align-content</h2><p>語法: <code>align-content: flex-start / flex-end / center / sapce-between / space-around / space-evenly ;</code><br>放置: 外容器<br>特性: 使用 flex-wrap: wrap;  當多行時，行的排列方式</p>
 <table>
@@ -277,9 +290,9 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/8hY3jc"></td>
-<td><img src="https://lurl.cc/UkMFbH"></td>
-<td><img src="https://lurl.cc/Xh6i9I"></td>
+<td><img src="https://lurl.cc/9qkR7M"></td>
+<td><img src="https://lurl.cc/NZQNKR"></td>
+<td><img src="https://lurl.cc/NJ4LND"></td>
 </tr>
 </tbody></table>
 <table>
@@ -290,8 +303,8 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/dncYap"></td>
-<td><img src="https://lurl.cc/JNJt1o"></td>
+<td><img src="https://lurl.cc/rLYjFt"></td>
+<td><img src="https://lurl.cc/SMLv7X"></td>
 </tr>
 </tbody></table>
 <table>
@@ -302,8 +315,8 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="https://lurl.cc/rjPebq"></td>
-<td><img src="https://lurl.cc/upeb6S"></td>
+<td><img src="https://lurl.cc/dPEAvv"></td>
+<td><img src="https://lurl.cc/oukkY7"></td>
 </tr>
 <tr>
 <td></td>
@@ -312,13 +325,13 @@
 </tbody></table>
 <hr>
 <p>這麼多的排版方式看得頭昏眼花，但其實配合常見版型就會發現常用的就只有其中幾種，<br>還有像是: <code>flex-grow</code> &#x2F; <code>flex-shrink</code> &#x2F; <code>flex-basis</code><br>需要再來好好做一下筆記，每次研究完過幾天就忘了👶</p>
-</div><div class="article-licensing box"><div class="licensing-title"><p>Flexbox 介紹</p><p><a href="https://eddie-hao.github.io/blog/2023/07/14/2023/7-14-Flexbox介紹/">https://eddie-hao.github.io/blog/2023/07/14/2023/7-14-Flexbox介紹/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Eddie</p></div></div><div class="level-item is-narrow"><div><h6>發表於</h6><p>2023-07-14</p></div></div><div class="level-item is-narrow"><div><h6>更新於</h6><p>2023-07-14</p></div></div><div class="level-item is-narrow"><div><h6>許可協議</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/blog/tags/%E5%89%8D%E7%AB%AF/">前端</a><a class="link-muted mr-2" rel="tag" href="/blog/tags/css/">css</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/blog/2023/06/07/2023/6-8-sixchoolCamp/"><span class="level-item">2023程式體驗營-心得</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">評論</h3><div class="fb-comments" data-width="100%" data-href="https://eddie-hao.github.io/blog/2023/07/14/2023/7-14-Flexbox%E4%BB%8B%E7%B4%B9/" data-num-posts="5"></div><script>(function(d, s, id) {
+</div><div class="article-licensing box"><div class="licensing-title"><p>Flexbox 介紹</p><p><a href="https://eddie-hao.github.io/blog/2023/07/14/2023/7-14-Flexbox介紹/">https://eddie-hao.github.io/blog/2023/07/14/2023/7-14-Flexbox介紹/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Eddie</p></div></div><div class="level-item is-narrow"><div><h6>發表於</h6><p>2023-07-14</p></div></div><div class="level-item is-narrow"><div><h6>更新於</h6><p>2023-07-15</p></div></div><div class="level-item is-narrow"><div><h6>許可協議</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/blog/tags/%E5%89%8D%E7%AB%AF/">前端</a><a class="link-muted mr-2" rel="tag" href="/blog/tags/css/">css</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/blog/2023/06/07/2023/6-8-sixchoolCamp/"><span class="level-item">2023程式體驗營-心得</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">評論</h3><div class="fb-comments" data-width="100%" data-href="https://eddie-hao.github.io/blog/2023/07/14/2023/7-14-Flexbox%E4%BB%8B%E7%B4%B9/" data-num-posts="5"></div><script>(function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
             js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v12.0";
             fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/blog/img/avatar2.png" alt="Eddie"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Eddie</p><p class="is-size-6 is-block">小小美編</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blog/archives"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分類</p><a href="/blog/categories"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">標籤</p><a href="/blog/tags"><p class="title">3</p></a></div></div></nav><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/Eddie-Hao"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Behance" href="https://www.behance.net/hungjihao"><i class="fa-brands fa-behance"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">文章目錄</h3><ul class="menu-list"><li><a class="level is-mobile" href="#排版神器-Flexbox"><span class="level-left"><span class="level-item">1</span><span class="level-item">排版神器 - Flexbox</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-flex"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">1. flex</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-內層元素會並排-只影響下一層-子層"><span class="level-left"><span class="level-item">1.1.1</span><span class="level-item">(1) 內層元素會並排(只影響下一層-子層)</span></span></a></li><li><a class="level is-mobile" href="#2-內層-item-高度都是等高，除非其他-item-寫死高度才不會等高"><span class="level-left"><span class="level-item">1.1.2</span><span class="level-item">(2) 內層 item 高度都是等高，除非其他 item 寫死高度才不會等高</span></span></a></li><li><a class="level is-mobile" href="#3-自適應父層容器"><span class="level-left"><span class="level-item">1.1.3</span><span class="level-item">(3) 自適應父層容器</span></span></a></li></ul></li><li><a class="level is-mobile" href="#2-flex-direction"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">2. flex-direction</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-row"><span class="level-left"><span class="level-item">1.2.1</span><span class="level-item">(1) row</span></span></a></li><li><a class="level is-mobile" href="#2-column"><span class="level-left"><span class="level-item">1.2.2</span><span class="level-item">(2) column</span></span></a></li></ul></li><li><a class="level is-mobile" href="#3-justify-content"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">3. justify-content</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-row-1"><span class="level-left"><span class="level-item">1.3.1</span><span class="level-item">(1) row</span></span></a></li><li><a class="level is-mobile" href="#2-column-1"><span class="level-left"><span class="level-item">1.3.2</span><span class="level-item">(2) column</span></span></a></li></ul></li><li><a class="level is-mobile" href="#4-align-items"><span class="level-left"><span class="level-item">1.4</span><span class="level-item">4. align-items</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-row-2"><span class="level-left"><span class="level-item">1.4.1</span><span class="level-item">(1) row</span></span></a></li><li><a class="level is-mobile" href="#2-column-2"><span class="level-left"><span class="level-item">1.4.2</span><span class="level-item">(2) column</span></span></a></li></ul></li><li><a class="level is-mobile" href="#5-align-self"><span class="level-left"><span class="level-item">1.5</span><span class="level-item">5. align-self</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-row-3"><span class="level-left"><span class="level-item">1.5.1</span><span class="level-item">(1) row</span></span></a></li><li><a class="level is-mobile" href="#2-column-3"><span class="level-left"><span class="level-item">1.5.2</span><span class="level-item">(2) column</span></span></a></li></ul></li><li><a class="level is-mobile" href="#6-flex-wrap"><span class="level-left"><span class="level-item">1.6</span><span class="level-item">6. flex-wrap</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-nowrap-未寫死寬度情況下，所有item會等比例並排"><span class="level-left"><span class="level-item">1.6.1</span><span class="level-item">(1)nowrap - 未寫死寬度情況下，所有item會等比例並排</span></span></a></li><li><a class="level is-mobile" href="#2-wrap-所有item超出容器寬度時，換行"><span class="level-left"><span class="level-item">1.6.2</span><span class="level-item">(2)wrap - 所有item超出容器寬度時，換行</span></span></a></li><li><a class="level is-mobile" href="#3-wrap-reverse-換行順序相反"><span class="level-left"><span class="level-item">1.6.3</span><span class="level-item">(3)wrap-reverse - 換行順序相反</span></span></a></li></ul></li><li><a class="level is-mobile" href="#7-align-content"><span class="level-left"><span class="level-item">1.7</span><span class="level-item">7. align-content</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/blog/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog/"><img src="/blog/img/logo.png" alt="學習筆記" height="28"></a><p class="is-size-7"><span>&copy; 2023 Eddie</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-tw");</script><script>var IcarusThemeSettings = {
+        }(document, 'script', 'facebook-jssdk'));</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/blog/img/avatar2.png" alt="Eddie"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Eddie</p><p class="is-size-6 is-block">小小美編</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blog/archives"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分類</p><a href="/blog/categories"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">標籤</p><a href="/blog/tags"><p class="title">3</p></a></div></div></nav><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/Eddie-Hao"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Behance" href="https://www.behance.net/hungjihao"><i class="fa-brands fa-behance"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">文章目錄</h3><ul class="menu-list"><li><a class="level is-mobile" href="#排版神器-Flexbox"><span class="level-left"><span class="level-item">1</span><span class="level-item">排版神器 - Flexbox</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-flex"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">1. flex</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-內層元素會並排-只影響下一層-子層"><span class="level-left"><span class="level-item">1.1.1</span><span class="level-item">(1) 內層元素會並排(只影響下一層-子層)</span></span></a></li><li><a class="level is-mobile" href="#2-內層-item-高度都是等高，除非其他-item-寫死高度才不會等高"><span class="level-left"><span class="level-item">1.1.2</span><span class="level-item">(2) 內層 item 高度都是等高，除非其他 item 寫死高度才不會等高</span></span></a></li><li><a class="level is-mobile" href="#3-自適應父層容器"><span class="level-left"><span class="level-item">1.1.3</span><span class="level-item">(3) 自適應父層容器</span></span></a></li><li><a class="level is-mobile" href="#4-flex-裡面可以再包-flex"><span class="level-left"><span class="level-item">1.1.4</span><span class="level-item">(4) flex 裡面可以再包 flex</span></span></a></li></ul></li><li><a class="level is-mobile" href="#2-flex-direction"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">2. flex-direction</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-row"><span class="level-left"><span class="level-item">1.2.1</span><span class="level-item">(1) row</span></span></a></li><li><a class="level is-mobile" href="#2-column"><span class="level-left"><span class="level-item">1.2.2</span><span class="level-item">(2) column</span></span></a></li></ul></li><li><a class="level is-mobile" href="#3-justify-content"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">3. justify-content</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-row-1"><span class="level-left"><span class="level-item">1.3.1</span><span class="level-item">(1) row</span></span></a></li><li><a class="level is-mobile" href="#2-column-1"><span class="level-left"><span class="level-item">1.3.2</span><span class="level-item">(2) column</span></span></a></li></ul></li><li><a class="level is-mobile" href="#4-align-items"><span class="level-left"><span class="level-item">1.4</span><span class="level-item">4. align-items</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-row-2"><span class="level-left"><span class="level-item">1.4.1</span><span class="level-item">(1) row</span></span></a></li><li><a class="level is-mobile" href="#2-column-2"><span class="level-left"><span class="level-item">1.4.2</span><span class="level-item">(2) column</span></span></a></li></ul></li><li><a class="level is-mobile" href="#5-align-self"><span class="level-left"><span class="level-item">1.5</span><span class="level-item">5. align-self</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-row-3"><span class="level-left"><span class="level-item">1.5.1</span><span class="level-item">(1) row</span></span></a></li><li><a class="level is-mobile" href="#2-column-3"><span class="level-left"><span class="level-item">1.5.2</span><span class="level-item">(2) column</span></span></a></li></ul></li><li><a class="level is-mobile" href="#6-flex-wrap"><span class="level-left"><span class="level-item">1.6</span><span class="level-item">6. flex-wrap</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-nowrap-未寫死寬度情況下，所有item會等比例並排"><span class="level-left"><span class="level-item">1.6.1</span><span class="level-item">(1)nowrap - 未寫死寬度情況下，所有item會等比例並排</span></span></a></li><li><a class="level is-mobile" href="#2-wrap-所有item超出容器寬度時，換行"><span class="level-left"><span class="level-item">1.6.2</span><span class="level-item">(2)wrap - 所有item超出容器寬度時，換行</span></span></a></li><li><a class="level is-mobile" href="#3-wrap-reverse-換行順序相反"><span class="level-left"><span class="level-item">1.6.3</span><span class="level-item">(3)wrap-reverse - 換行順序相反</span></span></a></li></ul></li><li><a class="level is-mobile" href="#7-align-content"><span class="level-left"><span class="level-item">1.7</span><span class="level-item">7. align-content</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/blog/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blog/"><img src="/blog/img/logo.png" alt="學習筆記" height="28"></a><p class="is-size-7"><span>&copy; 2023 Eddie</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-tw");</script><script>var IcarusThemeSettings = {
             article: {
                 highlight: {
                     clipboard: true,
